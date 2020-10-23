@@ -1,0 +1,59 @@
+{
+	"name": "personal-blog",
+	"private": true,
+	"description": "My Blog",
+	"version": "0.1.0",
+	"author": "Afroz Mohammad",
+	"dependencies": {
+		"@mdx-js/mdx": "^1.6.6",
+		"@mdx-js/react": "^1.6.6",
+		"babel-plugin-styled-components": "^1.10.7",
+		"gatsby": "^2.22.15",
+		"gatsby-background-image": "^1.1.1",
+		"gatsby-image": "2.4.4",
+		"gatsby-plugin-manifest": "^2.4.9",
+		"gatsby-plugin-mdx": "^1.2.15",
+		"gatsby-plugin-offline": "^3.2.7",
+		"gatsby-plugin-prefetch-google-fonts": "^1.4.3",
+		"gatsby-plugin-react-helmet": "^3.3.2",
+		"gatsby-plugin-react-svg": "^3.0.0",
+		"gatsby-plugin-sharp": "^2.6.9",
+		"gatsby-plugin-styled-components": "^3.3.3",
+		"gatsby-plugin-typescript": "^2.4.15",
+		"gatsby-remark-images": "^3.3.13",
+		"gatsby-source-filesystem": "^2.3.8",
+		"gatsby-transformer-remark": "^2.8.14",
+		"gatsby-transformer-sharp": "^2.5.3",
+		"prism-react-renderer": "^1.1.1",
+		"react": "^16.12.0",
+		"react-dom": "^16.12.0",
+		"react-helmet": "^6.0.0",
+		"react-icons": "^3.10.0",
+		"styled-components": "^5.1.1"
+	},
+	"devDependencies": {
+		"@types/node": "^14.0.23",
+		"@types/react": "^16.9.43",
+		"@types/react-dom": "^16.9.8",
+		"@types/react-helmet": "^6.0.0",
+		"@types/styled-components": "^5.1.1",
+		"gh-pages": "^3.0.0",
+		"node-sass": "^4.14.1",
+		"prettier": "2.0.5",
+		"terser": "4.6.11"
+	},
+	"keywords": [
+		"gatsby"
+	],
+	"license": "MIT",
+	"scripts": {
+		"build": "gatsby build",
+		"develop": "gatsby develop",
+		"format": "prettier --write \"**/*.{js,jsx,json,md,ts,tsx}\"",
+		"start": "yarn run develop",
+		"serve": "gatsby serve",
+		"clean": "gatsby clean",
+		"deploy": "gatsby build --prefix-paths && gh-pages -d public -b main",
+		"compile-sass": "node-sass src/sass/styles.scss src/css/style.css -w"
+	}
+}
